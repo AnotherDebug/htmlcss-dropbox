@@ -99,7 +99,7 @@ main {
 }
 
 /* todo:aggiungere tutte le section in sequenza */
-.operations, .team {
+.operations, .team, .companies {
 margin-top: 100px;
 }
 
@@ -150,6 +150,69 @@ main .cards .card {
     width: 50%;
 }
 /* /TEAM */
+
+/* COMPANIES */
+.box-top {
+    justify-content: space-between;
+    height: 500px;
+}
+/* BOX LEFT */
+.box-left {
+    width: 500px;
+    flex-wrap: wrap;
+}
+
+.box-left .company {
+    width: calc(100% / 2);
+    height: calc(100% / 2);
+    min-width: 250px;
+    min-height: 250px;
+}
+/* /BOX LEFT */
+
+
+/* BOX CENTER */
+.box-center {
+    width: calc(100vw - 1050px);
+    height: 100%;
+    overflow-y: scroll;   
+    overflow-y: hidden;   
+}
+/* /BOX CENTER */
+
+
+/* BOX RIGHT */
+.box-right {
+    width: 500px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.box-right .company {
+    width: calc(100% / 2);
+    height: calc(100% / 2);
+    min-width: 250px;
+    min-height: 250px;
+}
+/* /BOX RIGHT */
+
+/* BOX BOTTOM */
+.box-bottom {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 250px;
+}
+.box-bottom .text {
+    width: 50%;
+}
+.box-bottom .button {
+    width: 30%;
+}
+/* /BOX BOTTOM */
+
+
+/* /COMPANIES */
 
 
 
