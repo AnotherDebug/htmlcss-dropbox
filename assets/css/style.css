@@ -99,7 +99,7 @@ main {
 }
 
 /* todo:aggiungere tutte le section in sequenza */
-.operations {
+.operations, .team {
 margin-top: 100px;
 }
 
@@ -144,6 +144,12 @@ main .cards .card {
    padding: 50px;
 }
 /* /OPERATIONS */
+
+/* TEAM */
+.box-team {
+    width: 50%;
+}
+/* /TEAM */
 
 
 
