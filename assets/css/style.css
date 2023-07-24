@@ -29,7 +29,7 @@ body {
 }
 
 .container-small {
-    width: 70%;
+    width: 65%;
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -76,12 +76,15 @@ header .box-trial {
     height: 100%;
 }
 
+/* todo: da ricontrollare bug */
 .jumbotron {
-    width: 540px;
-    height: 280px;
+    width: 50%;
+    height: 70vh;
     position: absolute;
     top: 15%;
-    left: 22%;
+    left: 0;
+    margin-left: 260px;
+    min-width: 250px;
 }
 
 .box-header {
@@ -93,6 +96,11 @@ header .box-trial {
 /* *MAIN */
 main {
     margin-top: 100px;
+}
+
+/* todo:aggiungere tutte le section in sequenza */
+.operations {
+margin-top: 100px;
 }
 
 main .business .operations .team .company .faq {
@@ -124,6 +132,18 @@ main .box-business .partner .info {
 }
 /* /PARTNER */
 /* BUSINESS */
+
+/* OPERATIONS */
+main .cards {
+    flex-wrap: wrap;
+}
+
+main .cards .card {
+   width: calc(100%/3);
+   min-width: 250px;
+   padding: 50px;
+}
+/* /OPERATIONS */
 
 
 
