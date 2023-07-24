@@ -99,7 +99,7 @@ main {
 }
 
 /* todo:aggiungere tutte le section in sequenza */
-.operations, .team, .companies, .faq {
+.operations, .team, .companies, .faq, footer, .footer-bottom {
 margin-top: 100px;
 }
 
@@ -223,3 +223,25 @@ main .cards .card {
 }
 /* /FAQ */
 /* /MAIN */
+
+
+/* *FOOTER */
+footer {
+    width: 100%;
+}
+/* FOOTER TOP */
+.box-footer .footer-top .col {
+    width: 20%;
+}
+/* /FOOTER TOP */
+
+/* FOOTER BOTTOM */
+.box-footer .footer-bottom {
+    justify-content: space-between;
+}
+
+.footer-bottom {
+    width: 8%;
+}
+/* /FOOTER BOTTOM */
+/* /FOOTER */
