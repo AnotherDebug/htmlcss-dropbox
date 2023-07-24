@@ -68,14 +68,53 @@ header .topbar {
 }
 
 header .topbar .menu-left {
+    align-items: center;
     width: 35%;
     height: 100%;
 }
 
+/* MENU LEFT */
+header .topbar .menu-left ul {
+    list-style: none;
+}
+
+header .topbar .menu-left ul li {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+header .topbar .menu-left ul li a {
+    text-decoration: none;
+}
+/* /MENU LEFT */
+
+
+/* MENU RIGHT */
 header .topbar .menu-right {
+    justify-content: flex-end;
+    align-items: center;
     width: 35%;
     height: 100%;
 }
+
+header .topbar .menu-right ul {
+    list-style: none;
+}
+
+header .topbar .menu-right ul li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+header .topbar .menu-right ul li a {
+    text-decoration: none;
+}
+
+header .topbar .menu-right .button {
+    padding-right: 10px;
+}
+/* /MENU RIGHT */
+
 
 .box-header {
     position: relative;
@@ -89,7 +128,7 @@ header .box-trial {
 /* todo: da ricontrollare bug */
 .jumbotron {
     width: 50%;
-    height: 70vh;
+    height: 50vh;
     position: absolute;
     top: 15%;
     left: 0;
