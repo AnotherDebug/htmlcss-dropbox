@@ -78,9 +78,9 @@ header .box-trial {
 
 .jumbotron {
     width: 540px;
-    height: 350px;
+    height: 280px;
     position: absolute;
-    top: 16.5%;
+    top: 15%;
     left: 22%;
 }
 
@@ -88,3 +88,43 @@ header .box-trial {
     background-color: green;
 }
 /* /HEADER */
+
+
+/* *MAIN */
+main {
+    margin-top: 100px;
+}
+
+main .business .operations .team .company .faq {
+    width: 100%;
+    height: 100vh;
+}
+
+/* BUSINESS */
+/* COL */
+/* todo: estrapolare eventuale padding/margin aggiunto */
+.col-top .col {
+    width: calc(100% / 3);
+}
+
+.col-bottom .col {
+    width: 100%;
+}
+/* /COL */
+
+/* PARTNER */
+main .box-business .partner .img {
+    width: 60%;
+    height: 350px;
+}
+
+main .box-business .partner .info {
+    width: 40%;
+    height: 350px;
+}
+/* /PARTNER */
+/* BUSINESS */
+
+
+
+/* /MAIN */
