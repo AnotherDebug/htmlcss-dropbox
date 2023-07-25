@@ -624,9 +624,14 @@ main .cards .card img {
 
 
 /* FAQ */
+.faq h2 {
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--lightgray-color);
+}
 .faq .row-menu {
     justify-content: space-between;
     padding: 20px 20px 20px 0;
+    border-bottom: 1px solid var(--lightgray-color);
 }
 
 /* /FAQ */
