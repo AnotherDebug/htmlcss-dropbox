@@ -641,6 +641,9 @@ main .cards .card img {
 /* *FOOTER */
 footer {
     width: 100%;
+    padding-top: 100px;
+    background-color: #000;
+    color: var(--white-color);
 }
 
 /* FOOTER TOP */
@@ -648,11 +651,33 @@ footer {
     width: 20%;
 }
 
+.box-footer .footer-top .col .footer-title{
+    padding-bottom: 30px;
+}
+
+.box-footer .footer-top .col ul{
+    list-style: none;
+}
+
+.box-footer .footer-top .col ul li{
+    padding-bottom: 10px;
+}
+
+.box-footer .footer-top .col ul li a{
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 0.7rem;
+}
 /* /FOOTER TOP */
+
+
 
 /* FOOTER BOTTOM */
 .box-footer .footer-bottom {
     justify-content: space-between;
+    border-top: 1px solid var(--lightgray-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .footer-bottom {
