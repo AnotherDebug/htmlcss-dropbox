@@ -439,6 +439,8 @@ main .box-business .partner .button {
 /* BUSINESS */
 
 
+
+
 /* OPERATIONS */
 main .cards {
     flex-wrap: wrap;
@@ -447,10 +449,19 @@ main .cards {
 main .cards .card {
     width: calc(100%/3);
     min-width: 250px;
-    padding: 50px;
+    padding: 30px;
 }
 
+main .cards .card img{
+    width: 100%;
+}
+
+.box-operations .cards .card h3 {
+    padding-bottom: 20px;
+}
 /* /OPERATIONS */
+
+
 
 /* TEAM */
 .box-team {
@@ -489,7 +500,6 @@ main .cards .card {
     overflow-y: scroll;
     overflow-y: hidden;
 }
-
 /* /BOX CENTER */
 
 
