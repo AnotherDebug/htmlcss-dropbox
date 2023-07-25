@@ -8,6 +8,14 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+h1 {
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
 /* COLORS */
 :root {
     --lightblue-color: #b4d0e7;
@@ -27,6 +35,12 @@ body {
     border: 1px solid #000;
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 .d-flex {
     display: flex;
 }
@@ -41,15 +55,18 @@ body {
 .container-small {
     width: 65%;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1000px;
 }
 /* /CONTAINERS */
 
 /* Todo: Da ricontrollare */
 /* BTN */
 .btn-default {
-    padding: 5px;
+    padding: 5px 10px;
     background-color: var(--blue-color);
+    color: var(--white-color);
+    display: inline;
+    cursor: pointer;
 }
 .btn-white {
     padding: 5px;
@@ -71,6 +88,7 @@ header {
     width: 100%;
     height: 100%;
     padding-top: 130px;
+    background-color: var(--lightblue-color);
 }
 
 header .top-fixed {
@@ -86,12 +104,19 @@ header .topbar {
     width: 100%;
     height: 60px;
     justify-content: space-between;
+    background-color: var(--white-color);
 }
 
 header .topbar .menu-left {
     align-items: center;
     width: 35%;
     height: 100%;
+}
+
+/* logo */
+header .topbar .menu-left .logo img {
+ width: 70%;
+ padding-left: 20px;
 }
 
 /* MENU LEFT */
@@ -106,6 +131,7 @@ header .topbar .menu-left ul li {
 
 header .topbar .menu-left ul li a {
     text-decoration: none;
+    color: #000;
 }
 /* /MENU LEFT */
 
@@ -142,25 +168,43 @@ header .topbar .menu-right .button {
 }
 
 header .box-trial {
-    width: 250px;
-    height: 100%;
+    width: 350px;
+    height: 350px;
+    padding-top: 50px;
 }
 
-/* todo: da ricontrollare "bug" */
+header .box-trial .button {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header .box-trial .arrow {
+    padding-top: 25px;
+    padding-bottom: 5px;
+}
+
+header .box-trial .arrow a {
+   text-decoration: none;
+   color: #000;
+   font-size: 50px;
+}
+
 .jumbotron {
-    width: 50%;
-    height: 50vh;
+    width: 55%;
+    height: 100%;
     position: absolute;
-    top: 15%;
+    top: 0;
     left: 0;
-    margin-left: 260px;
-    min-width: 250px;
-}
-
-.box-header {
-    background-color: green;
+    z-index: 10;
+    margin-top: 255px;
+    margin-left: 355px;
+    background-image: url('../img/jumbo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
 }
 /* /HEADER */
+
 
 
 /* *MAIN */
@@ -181,7 +225,10 @@ main .business .operations .team .company .faq {
 
 /* BUSINESS */
 /* COL */
-/* todo: estrapolare eventuale padding/margin aggiunto */
+.business {
+    margin-top: 150px;
+}
+
 .col-top .col {
     width: calc(100% / 3);
 }
@@ -227,26 +274,26 @@ main .cards .card {
 /* COMPANIES */
 .box-top {
     justify-content: space-between;
+    width: 100%;
     height: 500px;
 }
 /* BOX LEFT */
 .box-left {
-    width: 500px;
+    width: calc(100% / 3);
+    height: 100%;
     flex-wrap: wrap;
 }
 
 .box-left .company {
-    width: calc(100% / 2);
-    height: calc(100% / 2);
-    min-width: 250px;
-    min-height: 250px;
+    width: 50%;
+    height: 50%;
 }
 /* /BOX LEFT */
 
 
 /* BOX CENTER */
 .box-center {
-    width: calc(100vw - 1050px);
+    width: calc(100% / 3);
     height: 100%;
     overflow-y: scroll;   
     overflow-y: hidden;   
@@ -256,7 +303,8 @@ main .cards .card {
 
 /* BOX RIGHT */
 .box-right {
-    width: 500px;
+    width: calc(100% / 3);
+    height: 100%;
     flex-wrap: wrap;
     justify-content: flex-end;
 }
@@ -264,8 +312,6 @@ main .cards .card {
 .box-right .company {
     width: calc(100% / 2);
     height: calc(100% / 2);
-    min-width: 250px;
-    min-height: 250px;
 }
 /* /BOX RIGHT */
 
