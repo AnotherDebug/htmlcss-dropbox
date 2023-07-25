@@ -21,7 +21,14 @@ h2 {
     --lightblue-color: #b4d0e7;
     --blue-color: #0061ff;
     --white-color: #ffffff;
-    --lightgray-color: #cdcdcd;
+    --lightgreen-color: #a2d39b;
+    --darkbrown-color: #61082b;
+    --red-color: #ff1c1c;
+    --darkred-color: #d5001f;
+    --darkblue-color: #0d2481;
+    --blue-color: #0093ce;
+    --yellow-color: #ffd830;
+    --lightgray-color: #d0d0d3;
 }
 
 /* /COLORS */
@@ -73,8 +80,10 @@ h2 {
 }
 
 .btn-white {
-    padding: 5px;
+    padding: 5px 30px;
     background-color: var(--white-color);
+    display: inline;
+    cursor: pointer;
 }
 
 .btn-border {
@@ -404,6 +413,7 @@ main .business .operations .team .company .faq {
     padding-top: 30px;
     max-width: 700px;
 }
+
 /* /COL */
 /* /BOTTOM */
 
@@ -418,6 +428,7 @@ main .business .operations .team .company .faq {
 main .box-business .partner .img {
     width: 100%;
 }
+
 main .box-business .partner .img img {
     width: 100%;
 }
@@ -452,13 +463,14 @@ main .cards .card {
     padding: 30px;
 }
 
-main .cards .card img{
+main .cards .card img {
     width: 100%;
 }
 
 .box-operations .cards .card h3 {
     padding-bottom: 20px;
 }
+
 /* /OPERATIONS */
 
 
@@ -468,7 +480,7 @@ main .cards .card img{
     width: 50%;
 }
 
-.box-team h2{
+.box-team h2 {
     padding-bottom: 40px;
 }
 
@@ -490,10 +502,38 @@ main .cards .card img{
 }
 
 .box-left .company {
+    justify-content: center;
+    align-items: center;
     width: 50%;
     height: 50%;
 }
 
+.box-left .company img {
+    width: 50%;
+}
+
+#florida img{
+    width: 180px;
+}
+
+
+
+#designit {
+    background-color: var(--lightgreen-color);
+}
+
+#arizona {
+    background-color: var(--darkbrown-color);
+}
+
+#florida {
+    padding: 110px 0 80px 40px;
+    background-color: var(--blue-color);
+}
+
+#topps {
+    background-color: var(--red-color);
+}
 /* /BOX LEFT */
 
 
@@ -503,7 +543,23 @@ main .cards .card img{
     height: 100%;
     overflow-y: scroll;
     overflow-y: hidden;
+    padding: 40px;
 }
+
+.box-center img {
+    width: 50%;
+}
+
+.box-center .border {
+    width: 100px;
+    padding-top: 50px;
+    border-bottom: 1px solid var(--lightgray-color);
+}
+
+.box-center p {
+    padding-top: 50px;
+}
+
 /* /BOX CENTER */
 
 
@@ -512,29 +568,54 @@ main .cards .card img{
     width: calc(100% / 3);
     height: 100%;
     flex-wrap: wrap;
-    justify-content: flex-end;
 }
 
 .box-right .company {
-    width: calc(100% / 2);
-    height: calc(100% / 2);
+    justify-content: center;
+    width: 50%;
+    height: 50%;
 }
 
+.box-right .company img{
+    width: 50%;
+}
+
+
+
+#bicycle {
+    background-color: var(--darkred-color);
+}
+
+#hearst {
+    background-color: var(--lightblue-color);
+}
+
+#planet {
+    background-color: var(--darkblue-color);
+}
+
+#channel {
+    background-color: var(--yellow-color);
+}
 /* /BOX RIGHT */
 
 /* BOX BOTTOM */
 .box-bottom {
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 250px;
+    background-color: var(--lightblue-color);
 }
 
 .box-bottom .text {
     width: 50%;
 }
 
-.box-bottom .button {
+.box-freetrial {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 250px;
+}
+
+.box-freetrial .button {
     width: 30%;
 }
 
