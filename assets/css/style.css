@@ -21,7 +21,9 @@ h2 {
     --lightblue-color: #b4d0e7;
     --blue-color: #0061ff;
     --white-color: #ffffff;
+    --lightgray-color: #cdcdcd;
 }
+
 /* /COLORS */
 
 
@@ -39,7 +41,7 @@ h2 {
     content: "";
     clear: both;
     display: table;
-  }
+}
 
 .d-flex {
     display: flex;
@@ -57,6 +59,7 @@ h2 {
     margin: 0 auto;
     max-width: 1000px;
 }
+
 /* /CONTAINERS */
 
 /* Todo: Da ricontrollare */
@@ -68,14 +71,23 @@ h2 {
     display: inline;
     cursor: pointer;
 }
+
 .btn-white {
     padding: 5px;
     background-color: var(--white-color);
 }
+
 .btn-border {
     padding: 5px;
-    border: 1px solid lightgrey;
+    border: 1px solid grey;
+    display: inline;
+    cursor: pointer;
 }
+
+.strong {
+    font-weight: 700;
+}
+
 /* /BTN */
 
 
@@ -115,8 +127,8 @@ header .topbar .menu-left {
 
 /* logo */
 header .topbar .menu-left .logo img {
- width: 70%;
- padding-left: 20px;
+    width: 70%;
+    padding-left: 20px;
 }
 
 /* MENU LEFT */
@@ -133,6 +145,7 @@ header .topbar .menu-left ul li a {
     text-decoration: none;
     color: #000;
 }
+
 /* /MENU LEFT */
 
 
@@ -155,11 +168,13 @@ header .topbar .menu-right ul li {
 
 header .topbar .menu-right ul li a {
     text-decoration: none;
+    color: #000;
 }
 
 header .topbar .menu-right .button {
     padding-right: 10px;
 }
+
 /* /MENU RIGHT */
 
 
@@ -184,9 +199,9 @@ header .box-trial .arrow {
 }
 
 header .box-trial .arrow a {
-   text-decoration: none;
-   color: #000;
-   font-size: 50px;
+    text-decoration: none;
+    color: #000;
+    font-size: 50px;
 }
 
 .jumbotron {
@@ -203,6 +218,7 @@ header .box-trial .arrow a {
     background-size: cover;
     background-size: 100%;
 }
+
 /* /HEADER */
 
 
@@ -212,9 +228,13 @@ main {
     margin-top: 100px;
 }
 
-/* todo:aggiungere tutte le section in sequenza */
-.operations, .team, .companies, .faq, footer, .footer-bottom {
-margin-top: 100px;
+.operations,
+.team,
+.companies,
+.faq,
+footer,
+.footer-bottom {
+    margin-top: 100px;
 }
 
 main .business .operations .team .company .faq {
@@ -224,30 +244,197 @@ main .business .operations .team .company .faq {
 
 
 /* BUSINESS */
-/* COL */
+/* BILLINGS */
 .business {
     margin-top: 150px;
 }
 
+.box-business .billings {
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.box-business .billings .month,
+.year {
+    padding-left: 5px;
+    padding-right: 50px;
+}
+
+.box-business .billings .circle-big {
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--lightgray-color);
+    border-radius: 50%;
+}
+
+.box-business .billings .circle-small {
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--lightgray-color);
+    border-radius: 50%;
+    background-color: var(--white-color);
+}
+
+.box-business .billings .circle-big:active {
+    background-color: var(--blue-color);
+}
+
+/* /BILLINGS */
+
+
+/* COL */
+/* TOP */
 .col-top .col {
     width: calc(100% / 3);
+    border: 1px solid var(--lightgray-color);
+}
+
+.col-top .col .box-col {
+    padding: 20px;
+}
+
+.col-top .col .type {
+    text-align: center;
+    border-bottom: 1px solid var(--lightgray-color);
+    padding: 10px 0 10px 0;
+}
+
+.category .title {
+    font-size: 1.8rem;
+}
+
+.category p {
+    padding-bottom: 10px;
+}
+
+.col-top .description {
+    padding-top: 40px;
+    margin-left: 20px;
+}
+
+.description span {
+    padding-right: 5px;
+}
+
+.description p {
+    padding-bottom: 20px;
+}
+
+/* todo: da ricontrollare */
+.description i {
+    margin-left: -20px;
+}
+
+/* !ricontrollare */
+.box-col .button {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.aligned {
+    margin-top: 22px;
+}
+
+.box-col .button .btn-default {
+    padding: 5px 50px 5px
+}
+
+.box-col .link {
+    padding: 30px 0 0 0;
+}
+
+.box-col .link p {
+    padding-right: 5px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--lightgray-color);
+}
+
+
+.highlights p {
+    padding: 30px 0 20px 0;
+}
+
+.highlights ul {
+    list-style: none;
+}
+
+.highlights ul li {
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+.fa-li.fa-solid.fa-check {
+    color: var(--blue-color);
+    margin-left: -15px;
+}
+
+/* /COL */
+/* /TOP */
+
+/* BOTTOM */
+/* COL */
+.col-bottom {
+    margin-top: 30px;
 }
 
 .col-bottom .col {
     width: 100%;
+    border: 1px solid var(--lightgray-color);
+}
+
+.col-bottom .col .type {
+    text-align: center;
+    border-bottom: 1px solid var(--lightgray-color);
+    padding: 10px;
+}
+
+.col-bottom .col .box-col {
+    padding: 20px;
+}
+
+.col-bottom .col .box-col .category {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col-bottom .description {
+    padding-top: 30px;
+    max-width: 700px;
 }
 /* /COL */
+/* /BOTTOM */
+
+
+
 
 /* PARTNER */
+.partner {
+    margin-top: 100px;
+}
+
 main .box-business .partner .img {
-    width: 60%;
-    height: 350px;
+    width: 100%;
+}
+main .box-business .partner .img img {
+    width: 100%;
 }
 
 main .box-business .partner .info {
-    width: 40%;
-    height: 350px;
+    width: 50%;
+    padding: 50px;
 }
+
+main .box-business .partner .info h3 {
+    padding-bottom: 20px;
+}
+
+main .box-business .partner .button {
+    padding-top: 20px;
+}
+
 /* /PARTNER */
 /* BUSINESS */
 
@@ -258,16 +445,18 @@ main .cards {
 }
 
 main .cards .card {
-   width: calc(100%/3);
-   min-width: 250px;
-   padding: 50px;
+    width: calc(100%/3);
+    min-width: 250px;
+    padding: 50px;
 }
+
 /* /OPERATIONS */
 
 /* TEAM */
 .box-team {
     width: 50%;
 }
+
 /* /TEAM */
 
 
@@ -277,6 +466,7 @@ main .cards .card {
     width: 100%;
     height: 500px;
 }
+
 /* BOX LEFT */
 .box-left {
     width: calc(100% / 3);
@@ -288,6 +478,7 @@ main .cards .card {
     width: 50%;
     height: 50%;
 }
+
 /* /BOX LEFT */
 
 
@@ -295,9 +486,10 @@ main .cards .card {
 .box-center {
     width: calc(100% / 3);
     height: 100%;
-    overflow-y: scroll;   
-    overflow-y: hidden;   
+    overflow-y: scroll;
+    overflow-y: hidden;
 }
+
 /* /BOX CENTER */
 
 
@@ -313,6 +505,7 @@ main .cards .card {
     width: calc(100% / 2);
     height: calc(100% / 2);
 }
+
 /* /BOX RIGHT */
 
 /* BOX BOTTOM */
@@ -322,12 +515,15 @@ main .cards .card {
     width: 100%;
     height: 250px;
 }
+
 .box-bottom .text {
     width: 50%;
 }
+
 .box-bottom .button {
     width: 30%;
 }
+
 /* /BOX BOTTOM */
 /* /COMPANIES */
 
@@ -337,6 +533,7 @@ main .cards .card {
     justify-content: space-between;
     padding: 20px 20px 20px 0;
 }
+
 /* /FAQ */
 /* /MAIN */
 
@@ -345,10 +542,12 @@ main .cards .card {
 footer {
     width: 100%;
 }
+
 /* FOOTER TOP */
 .box-footer .footer-top .col {
     width: 20%;
 }
+
 /* /FOOTER TOP */
 
 /* FOOTER BOTTOM */
@@ -359,5 +558,6 @@ footer {
 .footer-bottom {
     width: 8%;
 }
+
 /* /FOOTER BOTTOM */
 /* /FOOTER */
