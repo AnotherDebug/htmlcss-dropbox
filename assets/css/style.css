@@ -731,6 +731,10 @@ footer {
     font-size: 0.7rem;
 }
 
+.box-footer .footer-top .col ul li a:hover {
+    text-decoration: underline;
+}
+
 /* /FOOTER TOP */
 
 
