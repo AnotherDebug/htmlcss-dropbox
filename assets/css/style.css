@@ -509,6 +509,7 @@ main .cards .card img {
     height: 50%;
 }
 
+/* Grandezza e Colore svg */
 .box-left .company img {
     width: 50%;
     filter: brightness(0) invert(1);
@@ -535,7 +536,7 @@ main .cards .card img {
 }
 
 #arizona:hover {
-    border: 15px solid var(--lightgreen-color);
+    border: 15px solid brown;
 }
 
 #florida {
@@ -545,7 +546,9 @@ main .cards .card img {
 }
 
 #florida:hover {
-    border: 15px solid var(--lightgreen-color);
+    border: 15px solid var(--lightblue-color);
+    padding-left: 28px;
+    padding-top: 85px;
 }
 
 #topps {
@@ -554,7 +557,7 @@ main .cards .card img {
 }
 
 #topps:hover {
-    border: 15px solid var(--lightgreen-color);
+    border: 15px solid rgb(255, 111, 111);
 }
 
 /* /BOX LEFT */
@@ -564,8 +567,7 @@ main .cards .card img {
 .box-center {
     width: calc(100% / 3);
     height: 100%;
-    overflow-y: scroll;
-    overflow-y: hidden;
+    overflow: auto;
     padding: 40px;
 }
 
@@ -599,6 +601,7 @@ main .cards .card img {
     height: 50%;
 }
 
+/* Grandezza e Colore svg */
 .box-right .company img {
     width: 50%;
     filter: brightness(0) invert(1);
@@ -612,7 +615,7 @@ main .cards .card img {
 }
 
 #bicycle:hover {
-    border: 15px solid var(--lightgreen-color);
+    border: 15px solid rgb(255, 111, 111);
 }
 
 #hearst {
@@ -621,7 +624,7 @@ main .cards .card img {
 }
 
 #hearst:hover {
-    border: 15px solid var(--lightgreen-color);
+    border: 15px solid var(--white-color);
 }
 
 #planet {
@@ -630,7 +633,7 @@ main .cards .card img {
 }
 
 #planet:hover {
-    border: 15px solid var(--lightgreen-color);
+    border: 15px solid var(--blue-color);
 }
 
 #channel {
@@ -639,7 +642,7 @@ main .cards .card img {
 }
 
 #channel:hover {
-    border: 15px solid var(--lightgreen-color);
+    border: 15px solid rgb(248, 248, 144);
 }
 
 /* /BOX RIGHT */
@@ -688,7 +691,7 @@ main .cards .card img {
 
 .faq .row-menu .arrow-down:hover {
     background-color: rgba(0, 0, 0, 0.1);
-    padding: 5px;
+    padding: 0 3px 0 3px;
     border-radius: 5px;
 }
 
