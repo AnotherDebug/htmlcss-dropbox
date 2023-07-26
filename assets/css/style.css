@@ -672,6 +672,9 @@ main .cards .card img {
 
 
 /* FAQ */
+.faq {
+    min-height: 370px;
+}
 .faq h2 {
     padding-bottom: 30px;
     border-bottom: 1px solid var(--lightgray-color);
