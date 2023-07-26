@@ -683,9 +683,14 @@ main .cards .card img {
 
 
 /* FAQ */
+footer {
+    padding-bottom: 150px;
+}
+
 .faq {
     min-height: 370px;
 }
+
 .faq h2 {
     padding-bottom: 30px;
     border-bottom: 1px solid var(--lightgray-color);
@@ -723,6 +728,7 @@ main .cards .card img {
     padding: 0 3px 0 3px;
     border-radius: 5px;
 }
+
 /* /Freccia */
 
 
@@ -777,9 +783,68 @@ footer {
     padding-bottom: 30px;
 }
 
+
+/* Lang */
 .footer-bottom {
     width: 8%;
 }
+
+footer .globo {
+    margin: 0 13px;
+}
+
+footer .arrow {
+    margin-left: 10px;
+    transition: 1s;
+}
+
+#arrowup {
+    display: block;
+    text-align: center;
+    padding: 2px 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#arrowdown {
+    text-align: center;
+    display: none;
+    cursor: pointer;
+}
+
+.arrow:hover #arrowup {
+    display: none;
+}
+
+.arrow:hover #arrowdown {
+    display: block;
+    padding: 2px 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+.languages {
+    padding: 15px;
+}
+
+.lang {
+    display: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+    color: var(--white-color);
+    transition: 1.5s;
+}
+
+.lang:hover {
+    color: var(--blue-color);
+}
+
+.footer-bottom:hover .lang {
+    display: block;
+}
+
+/* /Lang */
 
 /* /FOOTER BOTTOM */
 /* /FOOTER */
