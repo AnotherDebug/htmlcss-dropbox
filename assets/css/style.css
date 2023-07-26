@@ -45,12 +45,6 @@ h2 {
     border: 1px solid #000;
 }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 .d-flex {
     display: flex;
 }
@@ -78,6 +72,12 @@ h2 {
     color: var(--white-color);
     text-align: center;
     cursor: pointer;
+    transition: 1s;
+}
+
+.btn-default:hover {
+    background-color: var(--darkblue-color);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.642);
 }
 
 .btn-white {
@@ -85,6 +85,11 @@ h2 {
     background-color: var(--white-color);
     display: inline;
     cursor: pointer;
+    transition: 1s;
+}
+
+.btn-white:hover {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.642);
 }
 
 .btn-border {
@@ -92,6 +97,12 @@ h2 {
     border: 1px solid grey;
     display: inline;
     cursor: pointer;
+    transition: 1s;
+}
+
+.btn-border:hover {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.642);
+    color: var(--blue-color);
 }
 
 .strong {
