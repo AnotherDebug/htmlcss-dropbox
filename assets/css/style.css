@@ -21,7 +21,8 @@ h2 {
     --lightblue-color: #b4d0e7;
     --blue-color: #0061ff;
     --white-color: #ffffff;
-    --lightgreen-color: #a2d39b;
+    --green-color: #a2d39b;
+    --lightgreen-color: #d0e9cd;
     --darkbrown-color: #61082b;
     --red-color: #ff1c1c;
     --darkred-color: #d5001f;
@@ -75,7 +76,7 @@ h2 {
     padding: 5px 10px;
     background-color: var(--blue-color);
     color: var(--white-color);
-    display: inline;
+    text-align: center;
     cursor: pointer;
 }
 
@@ -109,6 +110,7 @@ header {
     width: 100%;
     height: 100%;
     padding-top: 130px;
+    padding-bottom: 10px;
     background-color: var(--lightblue-color);
 }
 
@@ -277,6 +279,7 @@ main .business .operations .team .company .faq {
     height: 20px;
     border: 1px solid var(--lightgray-color);
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .box-business .billings .circle-small {
@@ -296,9 +299,19 @@ main .business .operations .team .company .faq {
 
 /* COL */
 /* TOP */
+
 .col-top .col {
     width: calc(100% / 3);
     border: 1px solid var(--lightgray-color);
+    margin: 20px;
+}
+
+#single {
+    margin-left: 0;
+}
+
+#agency {
+    margin-right: 0;
 }
 
 .col-top .col .box-col {
@@ -321,38 +334,17 @@ main .business .operations .team .company .faq {
 
 .col-top .description {
     padding-top: 40px;
-    margin-left: 20px;
 }
 
-.description span {
-    padding-right: 5px;
-}
-
-.description p {
-    padding-bottom: 20px;
-}
-
-/* todo: da ricontrollare */
-.description i {
-    margin-left: -20px;
-}
-
-/* !ricontrollare */
 .box-col .button {
     text-align: center;
     padding-top: 20px;
-}
-
-.aligned {
-    margin-top: 22px;
-}
-
-.box-col .button .btn-default {
-    padding: 5px 50px 5px
+    font-size: 0.7rem;
 }
 
 .box-col .link {
     padding: 30px 0 0 0;
+    font-size: 0.7rem;
 }
 
 .box-col .link p {
@@ -364,20 +356,25 @@ main .business .operations .team .company .faq {
 
 .highlights p {
     padding: 30px 0 20px 0;
+    font-size: 0.7rem;
 }
 
 .highlights ul {
     list-style: none;
 }
 
-.highlights ul li {
+.col-top ul li {
     list-style: none;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
+    font-size: 0.7rem;
 }
 
 .fa-li.fa-solid.fa-check {
     color: var(--blue-color);
-    margin-left: -15px;
+}
+
+.fa-ul {
+    margin-left: 17px;
 }
 
 /* /COL */
@@ -407,6 +404,10 @@ main .business .operations .team .company .faq {
 .col-bottom .col .box-col .category {
     align-items: center;
     justify-content: space-between;
+}
+
+.col-bottom .col .box-col .category .btn-default {
+    padding: 5px 30px;
 }
 
 .col-bottom .description {
@@ -510,30 +511,52 @@ main .cards .card img {
 
 .box-left .company img {
     width: 50%;
+    filter: brightness(0) invert(1);
 }
 
-#florida img{
+#florida img {
     width: 180px;
 }
 
 
 
 #designit {
-    background-color: var(--lightgreen-color);
+    background-color: var(--green-color);
+    transition: 0.5s linear;
+}
+
+#designit:hover {
+    border: 15px solid var(--lightgreen-color);
 }
 
 #arizona {
     background-color: var(--darkbrown-color);
+    transition: 0.5s linear;
+}
+
+#arizona:hover {
+    border: 15px solid var(--lightgreen-color);
 }
 
 #florida {
-    padding: 110px 0 80px 40px;
+    padding: 100px 0 80px 40px;
     background-color: var(--blue-color);
+    transition: 0.5s linear;
+}
+
+#florida:hover {
+    border: 15px solid var(--lightgreen-color);
 }
 
 #topps {
     background-color: var(--red-color);
+    transition: 0.5s linear;
 }
+
+#topps:hover {
+    border: 15px solid var(--lightgreen-color);
+}
+
 /* /BOX LEFT */
 
 
@@ -576,27 +599,49 @@ main .cards .card img {
     height: 50%;
 }
 
-.box-right .company img{
+.box-right .company img {
     width: 50%;
+    filter: brightness(0) invert(1);
 }
 
 
 
 #bicycle {
     background-color: var(--darkred-color);
+    transition: 0.5s linear;
+}
+
+#bicycle:hover {
+    border: 15px solid var(--lightgreen-color);
 }
 
 #hearst {
     background-color: var(--lightblue-color);
+    transition: 0.5s linear;
+}
+
+#hearst:hover {
+    border: 15px solid var(--lightgreen-color);
 }
 
 #planet {
     background-color: var(--darkblue-color);
+    transition: 0.5s linear;
+}
+
+#planet:hover {
+    border: 15px solid var(--lightgreen-color);
 }
 
 #channel {
     background-color: var(--yellow-color);
+    transition: 0.5s linear;
 }
+
+#channel:hover {
+    border: 15px solid var(--lightgreen-color);
+}
+
 /* /BOX RIGHT */
 
 /* BOX BOTTOM */
@@ -628,11 +673,25 @@ main .cards .card img {
     padding-bottom: 30px;
     border-bottom: 1px solid var(--lightgray-color);
 }
+
 .faq .row-menu {
     justify-content: space-between;
     padding: 20px 20px 20px 0;
     border-bottom: 1px solid var(--lightgray-color);
 }
+
+.faq .row-menu .arrow-down {
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.faq .row-menu .arrow-down:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    border-radius: 5px;
+}
+
 
 /* /FAQ */
 /* /MAIN */
@@ -651,23 +710,24 @@ footer {
     width: 20%;
 }
 
-.box-footer .footer-top .col .footer-title{
+.box-footer .footer-top .col .footer-title {
     padding-bottom: 30px;
 }
 
-.box-footer .footer-top .col ul{
+.box-footer .footer-top .col ul {
     list-style: none;
 }
 
-.box-footer .footer-top .col ul li{
+.box-footer .footer-top .col ul li {
     padding-bottom: 10px;
 }
 
-.box-footer .footer-top .col ul li a{
+.box-footer .footer-top .col ul li a {
     text-decoration: none;
     color: var(--white-color);
     font-size: 0.7rem;
 }
+
 /* /FOOTER TOP */
 
 
